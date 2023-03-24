@@ -55,10 +55,9 @@ window.addEventListener("load", function() {
             const languageSelect = document.querySelector("input[name='language']:checked").value;
             div6.removeAttribute("class");
             document.querySelector("span#answer5").innerText = languageSelect;
-          })
-        })
-        })
-      })
 
+          });
+        });
+        });
+      });
     });
-
