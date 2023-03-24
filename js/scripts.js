@@ -41,6 +41,15 @@ window.addEventListener("load", function() {
           vacation1.removeAttribute("class");
           document.querySelector("span#answer4").innerText = vacationSelect;
           div5.removeAttribute("class");
+          let form5 = document.querySelector("form#programLang");
+          let div6 = document.querySelector("div#linkUp");
+          //
+          form5.addEventListener("submit", function(event) {
+            event.preventDefault();
+            const languageSelect = document.querySelector("input[name='language']:checked").value;
+            div6.removeAttribute("class");
+            document.querySelector("span#answer5").innerText = languageSelect;
+          })
         })
         })
       })
