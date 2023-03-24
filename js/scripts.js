@@ -21,20 +21,20 @@ window.addEventListener("load", function() {
       hero1.removeAttribute("class");
       document.querySelector("span#answer2").innerText = heroSelect;
       div3.removeAttribute("class");
-      let form3 = document.querySelector("input#favColor");
+      let form3 = document.querySelector("form#favColor");
       let color1 = document.querySelector("h3#color1");
       let div4 = document.querySelector("div#fourthQuest");
       //
       form3.addEventListener("submit", function(event) {
         event.preventDefault();
-        let favoriteColor = document.getElementById("input#favColor").value ;
+        const favoriteColor = document.getElementById("input#favColor").value;
         color1.removeAttribute("class");
         document.querySelector("span#answer3").innerText = favoriteColor;
         div4.removeAttribute("class");
         //
+        })
       })
 
     })
-  })
-});
+  });
 
