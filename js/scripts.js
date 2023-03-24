@@ -32,6 +32,7 @@ window.addEventListener("load", function() {
         document.querySelector("span#answer3").innerText = favoriteColor;
         div4.removeAttribute("class");
         //
+        let form4 = document.querySelector()
         })
       })
 
