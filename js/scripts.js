@@ -1,6 +1,6 @@
 window.addEventListener("load", function() {
   let form1 = document.querySelector("form#dropSurvey");
-  let animal1 = document.querySelector("animal1");
+  let animal1 = document.querySelector("h3#animal1");
   form1.addEventListener("submit", function(event) {
     event.preventDefault();
     //code inside function
