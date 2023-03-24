@@ -75,7 +75,28 @@
   </div>
   <div id="lastQuest" class="hidden">
     <p>The last question! Admittedly, this survey has been a bit misleading, as any of the options you pick here will call up a link to a page about a given programming language. But I have a bit of a surprise (if I can pull it off...), so choose an option and follow the link!</p>
-
+    <form id="programLang">
+      <label>
+        <input type="radio" name="language" value="Ruby" checked> Ruby
+      </label><br>
+      <label>
+        <input type="radio" name="language" value="C#"> C#
+      </label><br>
+      <label>
+        <input type="radio" name="language" value="JavaScript"> JavaScript
+      </label><br>
+      <label>
+        <input type="radio" name="language" value="Go"> Go
+      </label><br>
+      <label>
+        <input type="radio" name="language" value="Python"> Python
+      </label>
+      <button type="submit">Submit Selection</button>
+    </form>
+  </div>
+  <div id="linkUp" class="hidden">
+    <h3>Thank you for taking this survey!</h3>
+    <p>Thanks again! This last bit might be the hardest for me to do, so hopefully it will be done before Monday! Click this link to see your result: <span id="survResult">_____</span></p>
   </div>
 </body>
 </html>
