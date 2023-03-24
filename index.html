@@ -45,15 +45,23 @@
     <h3 id="hero1" class="hidden">You chose <span id="answer2">_____</span>!</h3>
   </div>
   <div id="thirdQuest" class="hidden">
-    <p>Enter the first word that comes to mind. Any word will do:</p>
-    <label for="favColor">Enter a word:</label>
+    <p>Enter three numbers between 0 and 255:</p>
+    <label for="favColor">Enter three numbers:</label>
     <form id="favColor">
-      <input id="colorWord" type="text" value="rutabaga">
+      <div class="slideContainer">
+        <input id="color1Range" type="range" min="0" max="255" value="255" class="slider">
+      </div>
+      <div class="slideContainer">
+        <input id="color2Range" type="range" min="0" max="255" value="125" class="slider">
+      </div>
+      <div class="slideContainer">
+        <input id="color3Range" type="range" min="0" max="255" value="0" class="slider">
+      </div>
       <button type="submit">Submit Selection</button>
-      </form>
+      </form>  
   </div>
   <div>
-    <h3 id="color1" class="hidden">You wrote, "<span id="answer3">_____</span>," which in hex-code is this color: <span id="hexReturn">_____</span> ! How unique!</h3>
+    <h3 id="color1" class="hidden">You wrote, "<span id="answer3a">_____</span>, <span id=answer3b>_____</span>, <span id=answer3c>_____</span>," which in RGB Code is this color: <span id="hexReturn">_____</span> ! How unique!</h3>
   </div>
   <div id="fourthQuest" class="hidden">
     <p>Almost there! Just two more questions left!</p>

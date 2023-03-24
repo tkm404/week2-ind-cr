@@ -27,11 +27,14 @@ window.addEventListener("load", function() {
       //
       form3.addEventListener("submit", function(event) {
         event.preventDefault();
-        const favoriteColor = document.getElementById("colorWord").value;
+        const favoriteColor1 = document.getElementById("color1Range").value;
+        const favoriteColor2 = document.getElementById("color2Range").value;
+        const favoriteColor3 = document.getElementById("color3Range").value;
         color1.removeAttribute("class");
-        document.querySelector("span#answer3").innerText = favoriteColor;
-        // string-to-hex converter (wish me luck!)
-        }
+        document.querySelector("span#answer3a").innerText = favoriteColor1;
+        document.querySelector("span#answer3b").innerText = favoriteColor2;
+        document.querySelector("span#answer3c").innerText = favoriteColor3;
+        })
         //
         div4.removeAttribute("class");
         let form4 = document.querySelector("form#vacationChoice");
@@ -57,6 +60,5 @@ window.addEventListener("load", function() {
         })
       })
 
-    })
-  });
+    });
 
