@@ -45,13 +45,18 @@
     <h3 id="hero1" class="hidden">You chose <span id="answer2">_____</span>!</h3>
   </div>
   <div id="thirdQuest" class="hidden">
-    <p>Choose a color, any color! Which one is your favorite?</p>
-    <label for="favColor">Select a color:</label>
-      <input id="favColor" type="color">
+    <p>Enter the first word that comes to mind. Any word will do:</p>
+    <form id="favColor">
+      <label for="favColor">Enter a word:</label>
+      <input id="favColor" type="text" name="colorName" value="rutabaga">
       <button type="submit">Submit Selection</button>
+      </form>
   </div>
   <div>
-    <h3 id="color1" class="hidden">You chose <span id="answer3">_____</span>! How unique!</h3>
+    <h3 id="color1" class="hidden">You chose <span id="answer3">_____</span>, which in hex-code is this color "<span id="hexReturn">_____</span>"! How unique!</h3>
+  </div>
+  <div id="fourthQuest" class="hidden">
+    <p>Almost there! Just two more questions left!</p>
   </div>
 </body>
 </html>
