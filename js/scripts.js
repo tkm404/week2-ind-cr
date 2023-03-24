@@ -31,7 +31,7 @@ window.addEventListener("load", function() {
         color1.removeAttribute("class");
         document.querySelector("span#answer3").innerText = favoriteColor;
         // string-to-hex converter (wish me luck!)
-     
+        }
         //
         div4.removeAttribute("class");
         let form4 = document.querySelector("form#vacationChoice");
