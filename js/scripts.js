@@ -31,8 +31,17 @@ window.addEventListener("load", function() {
         color1.removeAttribute("class");
         document.querySelector("span#answer3").innerText = favoriteColor;
         div4.removeAttribute("class");
+        let form4 = document.querySelector("form#vacationChoice");
+        let vacation1 = document.querySelector("h3#vacation1");
+        let div5 = document.querySelector("div#lastQuest");
         //
-        let form4 = document.querySelector()
+        form4.addEventListener("submit", function(event) {
+          event.preventDefault();
+          const vacationSelect = document.getElementById("destination").value;
+          vacation1.removeAttribute("class");
+          document.querySelector("span#answer4").innerText = vacationSelect;
+          div5.removeAttribute("class");
+        })
         })
       })
 
