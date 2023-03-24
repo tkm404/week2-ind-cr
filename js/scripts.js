@@ -27,7 +27,7 @@ window.addEventListener("load", function() {
       //
       form3.addEventListener("submit", function(event) {
         event.preventDefault();
-        const favoriteColor = document.getElementById("input#favColor").value;
+        const favoriteColor = document.getElementById("colorWord").value;
         color1.removeAttribute("class");
         document.querySelector("span#answer3").innerText = favoriteColor;
         div4.removeAttribute("class");
