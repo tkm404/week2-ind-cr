@@ -55,7 +55,23 @@ window.addEventListener("load", function() {
             const languageSelect = document.querySelector("input[name='language']:checked").value;
             div6.removeAttribute("class");
             document.querySelector("span#answer5").innerText = languageSelect;
-
+            const suResult1 = document.querySelector("span#survResult1");
+            const suResult2 = document.querySelector("span#survResult2");
+            const suResult3 = document.querySelector("span#survResult3");
+            const suResult4 = document.querySelector("span#survResult4");
+            const suResult5 = document.querySelector("span#survResult5");
+             let result;
+            if (languageSelect === "Ruby") {
+              result = suResult1.removeAttribute("class");
+            } else if (languageSelect === "C#") {
+              result = suResult2.removeAttribute("class");
+            } else if (languageSelect === "JavaScript") {
+              result = suResult3.removeAttribute("class");
+            } else if (languageSelect === "Go") {
+              result = suResult4.removeAttribute("class");
+            } else if (languageSelect === "Python") {
+              result = suResult5.removeAttribute("class");
+            }
           });
         });
         });
